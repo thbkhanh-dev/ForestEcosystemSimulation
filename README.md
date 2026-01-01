@@ -46,6 +46,11 @@ ForestEcosystemSimulation/
 │
 ├── index.html                # Main entry file (all-in-one version)
 │
+<<<<<<< HEAD
+=======
+├── README.md                 # Project documentation
+│
+>>>>>>> 57fb20b (Update report)
 ├── css/
 │   └── styles.css  
 │

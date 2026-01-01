@@ -1,10 +1,3 @@
-
-
-Dưới đây là **file `README.md` được viết lại theo chuẩn đồ án đại học**, phù hợp để **nộp chính thức**, **bảo vệ vấn đáp**, và **đánh giá cao về tư duy kỹ thuật & tổ chức code**.
-Nội dung được viết **nghiêm túc – học thuật – rõ ràng**, không màu mè.
-
----
-
 # 🌲 Forest Ecosystem Simulation
 
 ### Three.js – Computer Graphics Course Project
