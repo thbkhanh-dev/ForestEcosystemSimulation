@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Ecosystem Simulation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="info">
+        <h3>Forest Ecosystem Simulation</h3>
+        <ul>
+            <li>Mouse drag: Rotate camera</li>
+            <li>Scroll: Zoom in/out</li>
+            <li>Right click drag: Pan</li>
+        </ul>
+    </div>
+    <div id="stats"></div>
+
+    <div id="controls">
+        <div style="display: flex; align-items: center;">
+            <div id="time-display">12:00</div>
+            <span id="sun-moon-indicator">☀️</span>
+        </div>
+        <div id="time-label">Current Time</div>
+
+        <div id="time-slider-container">
+            <span style="color: #666;">00:00</span>
+            <input type="range" id="time-slider" min="0" max="1440" value="720" step="1">
+            <span style="color: #666;">24:00</span>
+        </div>
+        <div class="time-labels">
+            <span>Midnight</span>
+            <span>Sunrise</span>
+            <span>Noon</span>
+            <span>Sunset</span>
+            <span>Midnight</span>
+        </div>
+
+        <div id="button-container">
+            <button class="control-btn" id="play-btn">▶ Play</button>
+            <button class="control-btn" id="stop-btn">⏹ Stop</button>
+        </div>
+
+        <div id="speed-container">
+            <span>Speed:</span>
+            <input type="range" id="speed-slider" min="1" max="100" value="30">
+            <span id="speed-value">30x</span>
+        </div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

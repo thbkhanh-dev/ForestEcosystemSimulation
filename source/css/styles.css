@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+#info h3 {
+    margin-bottom: 8px;
+    color: #90EE90;
+}
+
+#info ul {
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+#stats {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    min-width: 350px;
+}
+
+#time-display {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+#time-label {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: -10px;
+}
+
+#time-slider-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#time-slider {
+    flex: 1;
+    height: 8px;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #1a1a2e 0%, #ff6b35 25%, #87CEEB 50%, #ff6b35 75%, #1a1a2e 100%);
+    border-radius: 4px;
+    outline: none;
+}
+
+#time-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #FFD700;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+#time-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #FFD700;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.time-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 11px;
+    color: #888;
+}
+
+#button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.control-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#play-btn {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+}
+
+#play-btn:hover {
+    background: linear-gradient(135deg, #45a049, #3d8b40);
+    transform: scale(1.05);
+}
+
+#stop-btn {
+    background: linear-gradient(135deg, #f44336, #da190b);
+    color: white;
+}
+
+#stop-btn:hover {
+    background: linear-gradient(135deg, #da190b, #b71c1c);
+    transform: scale(1.05);
+}
+
+#speed-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+#speed-slider {
+    width: 100px;
+    height: 6px;
+    -webkit-appearance: none;
+    background: #555;
+    border-radius: 3px;
+    outline: none;
+}
+
+#speed-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#sun-moon-indicator {
+    font-size: 24px;
+    margin-left: 10px;
+}
